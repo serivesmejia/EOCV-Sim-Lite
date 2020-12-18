@@ -16,6 +16,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.openpnp:opencv:4.3.0-2'
     implementation 'com.github.serivesmejia:EOCV-Sim:2.0.0'
 }
 
