@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.serivesmejia'
+version '2.0.0-A'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_9
+    targetCompatibility = JavaVersion.VERSION_1_9
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.serivesmejia:EOCV-Sim:2.0.0'
+}
+
+task(runSimulator, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.github.serivesmejia.eocvsim.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
