@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.github.serivesmejia'
-version '2.0.0-A'
+version '2.0.1-A'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_9
@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     implementation 'org.openpnp:opencv:4.3.0-2'
-    implementation 'com.github.serivesmejia:EOCV-Sim:2.0.0'
+    implementation 'com.github.serivesmejia:EOCV-Sim:2.0.1'
 }
 
 task(runSimulator, dependsOn: 'classes', type: JavaExec) {
